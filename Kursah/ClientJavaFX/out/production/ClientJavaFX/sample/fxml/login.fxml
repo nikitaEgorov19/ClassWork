@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.LoginController">
+   <children>
+      <Button fx:id="RegistrButton" layoutX="149.0" layoutY="343.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="249.0" style="-fx-background-color: #C38EC7;" text="Registr">
+         <font>
+            <Font name="Kristen ITC" size="14.0" />
+         </font>
+      </Button>
+      <AnchorPane prefHeight="82.0" prefWidth="520.0" style="-fx-background-color: #8467D7;">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="108.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/9.gif" />
+               </image>
+            </ImageView>
+            <Label layoutX="151.0" layoutY="6.0" text="User Login" textFill="#eeea06">
+               <font>
+                  <Font name="Kristen ITC" size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="33.0" layoutY="161.0" text="Username">
+         <font>
+            <Font name="Kristen ITC" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="UsernameTextField" layoutX="165.0" layoutY="168.0" prefHeight="25.0" prefWidth="217.0" promptText="Useranme">
+         <font>
+            <Font name="Kristen ITC" size="14.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Label layoutX="35.0" layoutY="199.0" text="Password">
+         <font>
+            <Font name="Kristen ITC" size="24.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="PasswordField" layoutX="165.0" layoutY="206.0" prefHeight="25.0" prefWidth="217.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="LoginButton" layoutX="150.0" layoutY="292.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="249.0" style="-fx-background-color: #C38EC7;" text="Login in">
+         <font>
+            <Font name="Kristen ITC" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="LoginMessageLabel" alignment="CENTER" layoutX="9.0" layoutY="254.0" prefHeight="38.0" prefWidth="497.0" textFill="#f80000">
+         <font>
+            <Font name="Kristen ITC" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

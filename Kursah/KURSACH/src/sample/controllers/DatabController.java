@@ -55,7 +55,10 @@ public class DatabController {
 
     @FXML
     void initialize() {
-        DBConnec
+        markColumn.setCellValueFactory(cell -> cell.getValue().getMarkProperty());
+        modelColumn.setCellValueFactory(cell -> cell.getValue().getModelProperty());
+        priceColumn.setCellValueFactory(cell -> cell.getValue().getPriceProperty());
+        tonnageColumn.setCellValueFactory(cell -> cell.getValue().getTonnageProperty());
 
 
 
